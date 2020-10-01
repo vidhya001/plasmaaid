@@ -1,0 +1,618 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.stickyLower {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.stickyTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* .stickylower{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+.navbar{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    color:black;
+    background-color: white;
+    box-shadow:0px 0px 15px grey;
+    width:100%;
+    height: 55px;
+    /* border-radius: 2px solid red; */
+}
+
+.brand-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+.main_app_title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.brand-title a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.covidred{ 
+    color: red;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color:black;
+    background-color: slategray;
+    padding:10px;
+    display: block;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Merriweather', serif;
+}
+
+.navbar-links li a:hover{
+    /* background-color: black; */
+    font-size: 19px;
+    color: red;
+    text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    top:15px;
+    right:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:5px;
+    height: 21px;
+    text-decoration: none;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width:100%;
+    background-color:black;
+    border-radius: 10px;
+}
+
+/* Body part css */
+.willBeWhite{
+  color: white;
+  font-size: 18px;
+}
+
+.regional_invisible_fonts{
+  /* color: white; */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.intro{
+  margin: 15px;
+}
+
+.button{
+  font-weight: bolder;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Merriweather', serif;
+  /* font-size: 18px; */
+
+}
+
+.mainbody{
+    /* margin: 10px; */
+    align-content: center;
+    background-color:white;
+}
+h2{
+  color:black;
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+
+}
+p{
+  color:black;
+  font-size: 0.9em;
+  font-family: 'Merriweather', serif;
+}
+h3{
+  color:black;
+  text-align:center;
+  border-left:2px solid #B1ACAA;
+  font-family: 'Merriweather', serif;
+  
+
+}
+
+
+.eachSite{
+   
+    margin: 10px;
+    padding: 5px;
+    color:whitesmoke;
+    align-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 6px 0 #B1ACAA;
+    border:1px solid black;
+   /* border-bottom:0.01px solid black;*/
+   
+}
+
+.partMainClass button{
+    width:160px;
+    height: 50px;
+    padding: 2px;
+    margin: 2px;
+    font-weight:bold;
+    background-color:#B1ACAA;
+    border-radius: 15px;
+   
+    text-align:center;
+    box-shadow: 1px 1px 1px 0px grey;
+    
+}
+
+.partMainClass{
+    border: 3px solid #B1ACAA;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-content: center;
+}
+
+
+/* navvar bottom  */
+
+  
+.navbarbottom{
+    /* position: fixed; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    color:black;
+    background-color: white;
+    box-shadow:0px 0px 15px black;
+    /* width:100%; */
+    height: 50px;
+    /* border-radius: 2px solid red; */
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    /* background-color: DodgerBlue; */
+  }
+
+.navbar-links-bottom div{
+    margin-top:10px;
+    padding:1px;
+    align-items: center;
+    /* display: flex; */
+}
+
+.navbar-links-bottom li{
+    list-style: none;
+  
+}
+
+.navbar-links-bottom li a{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    display: block;
+    /* font-size: 10px; */
+    /* font-weight: normal; */
+    /* opacity: 0.5; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Merriweather', serif;
+}
+
+/* .onTappingLowerNavItems{
+    font-size: 10px;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.onTappingLowerNavItemsNot{
+    font-size: 2px;
+    color: red;
+    text-decoration: none;
+    font-weight: normal;
+} */
+
+@media(max-width:350px){
+
+    .navbar-links-bottom li a{
+        font-size: 5px;
+    }
+}
+
+ /* contribute form css  */
+
+ 
+.contributeForm_Section{
+    background:white;
+  }
+  
+  .contributeForm_container{
+    background:white;
+    color:#485e74;
+    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+  }
+  
+  .contributeForm_container{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+
+  .contributeForm_contact{
+    font-size: 20px;
+
+  }
+  
+  .contributeForm_alert{
+    font-size: 20px;
+  }
+
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  .contributeForm_brand{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    color:black;
+  }
+  
+  .contributeForm_wrapper{
+    box-shadow: 0 0 10px 0 rgba(72,94,116,0.7);
+  }
+  
+  .contributeForm_wrapper > *{
+    /* padding: 1em; */
+    padding:10px;
+  }
+
+  
+  .contributeForm_contact-info{
+    background:whitesmoke;
+    font-size: 15px;
+  }
+  
+  .contributeForm_contact-info h3, .contributeForm_contact-info ul{
+    text-align: center;
+    /* margin:0 0 1rem 0; */
+  }
+  
+  .contributeForm_contact{
+    background:#ffffff;
+  }
+  
+  /* FORM STYLES */
+  .contributeForm_contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+  }
+  
+  .contributeForm_contact form label{
+    display:block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .contributeForm_contact form p{
+    margin:0;
+  }
+  
+  .contributeForm_contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contributeForm_contact form button, .contributeForm_contact form input, .contributeForm_contact form textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid grey;
+    font-size: 15px;
+    /* height:20px; */
+  }
+  
+  .contributeForm_contact form button{
+    background:grey;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border:0;
+    /* text-transform: uppercase; */
+  }
+  
+  .contributeForm_contact form button:hover,.contributeForm_contact form button:focus{
+    background:black;
+    color:#fff;
+    outline:0;
+    transition: background-color 1s ease-out;
+  }
+  
+  .contributeForm_alert{
+    text-align: center;
+    padding:10px;
+    background:black;
+    color:#fff;
+    /* font-weight: bold; */
+    margin-top:10px;
+    display:none;
+  } 
+
+ /* Contact form  */
+
+.contactForm_Section{
+    background:white;
+  }
+  
+  .contactForm_container{
+    background:white;
+    color:#485e74;
+    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1em;
+  }
+  
+  .contactForm_container{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+  }
+
+  .contactForm_contact{
+    font-size: 20px;
+
+  }
+  
+  .contactForm_alert{
+    font-size: 20px;
+  }
+
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  .contactForm_brand{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    color:black;
+  }
+  
+  .contactForm_wrapper{
+    box-shadow: 0 0 10px 0 rgba(72,94,116,0.7);
+  }
+  
+  .contactForm_wrapper > *{
+    /* padding: 1em; */
+    padding:10px;
+  }
+
+  
+  .contactForm_contact-info{
+    background:whitesmoke;
+    font-size: 15px;
+  }
+  
+  .contactForm_contact-info h3, .contactForm_contact-info ul{
+    text-align: center;
+    /* margin:0 0 1rem 0; */
+  }
+  
+  .contactForm_contact{
+    background:#ffffff;
+  }
+  
+  /* FORM STYLES */
+  .contactForm_contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+  }
+  
+  .contactForm_contact form label{
+    display:block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .contactForm_contact form p{
+    margin:0;
+  }
+  
+  .contactForm_contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contactForm_contact form button, .contactForm_contact form input, .contactForm_contact form textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid grey;
+    font-size: 15px;
+    /* height:20px; */
+  }
+  
+  .contactForm_contact form button{
+    background:grey;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border:0;
+    /* text-transform: uppercase; */
+  }
+  
+  .contactForm_contact form button:hover,.contactForm_contact form button:focus{
+    background:black;
+    color:#fff;
+    outline:0;
+    transition: background-color 1s ease-out;
+  }
+  
+  .contactForm_alert{
+    text-align: center;
+    padding:10px;
+    background:black;
+    color:#fff;
+    /* font-weight: bold; */
+    margin-top:10px;
+    display:none;
+  } 
+
+
+/* mission part code  */
+
+.mission{
+
+align-content: center;
+    margin: 10px;
+    border:2px solid black;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(72,94,116,0.7);
+    
+}
+
+.missionHeading{
+    align-content: center;
+    font-size: 20px;
+}
+
+
+/* slide down bar css  */
+
+.slideDown{
+    border:5px solid black;
+    background-color:white;
+    position: fixed; 
+    right: -1000px;
+    width: 100%;
+    top:55px;
+    height: 100%;
+    display: block;
+    transition: right 1s;
+    /* border-radius: 30px; */
+    text-align: center;
+    align-content: center;
+}
+.slide_d{
+  text-align:left;
+}
+
+#iconCancel{
+    display: none;
+}
+
+.shareImg{
+  width:40px;
+  /* margin-left: 10px; */
+}
+
+.imgwht{
+  width:55px;
+}
+
+.sharebtns{
+  margin: 2px;
+}
+
+
+/* new changes that are made  */
+/* .updated{
+  font-size: 11px;
+  font-weight: bold;
+  position: relative;
+  top:55px;
+  right:15px;
+} */
+
+.willBeWhite{
+  color: white;
+  font-size: 18px;
+}
+
+.regional_invisible_fonts{
+  /* color: white; */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.intro{
+  margin: 15px;
+}
+
+.button{
+  font-weight: bolder;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Merriweather', serif;
+  /* font-size: 18px; */
+
+}
+
+.CopyMeClass{
+ margin: 20px;
+ border: 2px solid black;
+}
+
+.clipboardCopy{
+  /* border:2px solid blue; */
+  /* position: absolute; */
+  /* top:25px; */
+  /* right:10px; */
+  font-family: 'Merriweather', serif;
+  border-radius: 50x;
+  font-size: 15px;
+}

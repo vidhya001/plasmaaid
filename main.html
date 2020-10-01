@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="covid-19 plasma donors and patients connecting platform">
+    <meta name="keywords" content="COID-19,Plasma,HTML,CSS,JavaScript,Donors,Patients,Volunteers">
+    <title>Plasma Aid</title>
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="shortcut icon" href="images/MainLogo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="loadData()">
+
+    <!-- beginning of the navbar  -->
+    <p></p>
+    <div>        
+        <nav class="navbar" id="navbarTop">   
+            <div class="brand-title"><img class="mainLogoImage" src="images/pl2.png" alt="logo" width="35px" height="32px"><span class="covidred">Plasma</span>Aid</div>
+            <div class="toggle-button">
+                <i id="iconShare" class="fa fa-share" style="font-size:24px;color:black" onclick="openSlideDown()"></i>
+            </div>
+            <div class="toggle-button">
+                <i id="iconCancel" class="fa fa-remove" style="font-size:24px;color:black" onclick="closeSlideDown()"></i>
+            </div>
+            
+        </nav>
+    </div>
+
+    <!-- Drop down sliding for share    -->
+
+    <div class="slideDown" id="slideDownId">
+        <h2>Lets fight together</h2>
+         
+          <div id="share-buttons">
+            <p>Spread your part</p>
+          
+            <!-- Email -->
+            <a class="sharebtns" href="mailto:?Subject=PlasmaAid App&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+                <img class="shareImg imgwht" src="images/gmail.png" alt="Email" />
+            </a>
+         
+            <!-- Facebook -->
+            <a class="sharebtns" href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                <img class="shareImg" src="images/facebook.png" alt="Facebook" />
+            </a>
+            
+            <!-- Google+ -->
+            <!-- <a class="sharebtns" href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                <img class="shareImg" src="images/google.png" alt="Google" />
+            </a> -->
+            
+            <!-- LinkedIn -->
+            <a class="sharebtns" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                <img  class="shareImg" src="images/linkedin.png" alt="LinkedIn" />
+            </a>            
+                
+            <!-- Reddit -->
+            <a class="sharebtns" href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                <img class="shareImg" src="images/reddit.png" alt="Reddit" />
+            </a>
+                                     
+            <!-- Twitter -->
+            <a class="sharebtns" href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                <img class="shareImg" src="images/twitter.png" alt="Twitter" />
+            </a>
+            <!-- whatsapp -->
+            <a class="sharebtns" href="https://api.whatsapp.com/send?text=%F0%9F%9A%A8+COVID-19+plasma+therapy+resources+for+India+%F0%9F%87%AE%F0%9F%87%B3+%0A%0AHere+is+the+compiled+list+of+available+resources+to+connect+with+COVID-19+recovered+plasma+donor+and+also+to+donate+plasma+after+recovery+from+covid-19:+*https://s3.ap-south-1.amazonaws.com/needcovidplasma.in/PlasmaAid/main.html*%0A%0A*_Lets+Fight+together.+Please+share+it+with+all+your+friends+and+family._">
+            <img class="shareImg imgwht" src="images/whatsapp.png" alt="whatsapp"/>
+            </a>
+
+            <!-- play store our app link  -->
+            Play store link here
+            <p></p>
+            <a href="https://play.google.com/store/apps/details?id=com.iitbbs.esummit"><img src="images/playstore.png" alt="PlayStore"></a>
+
+            <div class="CopyMeClass" id="CopyMeID">The text to copy to the clipboard https://play.google.com/store/apps/details?id=com.iitbbs.esummit</div>
+            <button class="clipboardCopy" id="clipboardCopyId" onclick="CopyClassText()">Copy to clipboard</button>        
+          
+        </div>
+
+      
+    </div>
+
+    
+    
+    
+
+    <!-- Begginng of code da -->
+    <div class="container mainbody" id="homeDivId">
+        <p class="willBeWhite">PlasmaAid</p>
+
+        <div class="panIndia partMainClass" id="panIndialId">
+            <!-- <p class="updated">(Last updated :<span id="time">10</span> minutes ago )</p> -->
+            <h1 class="main_app_title"><span class="covidred">Plasma</span>Aid</h1>
+            <div class="intro">
+              <p> This app aspires to help people who are in need of or can donate Covid plasma. We have provided below the links to the various websites and sources across India that might help you connect with a donor matching your requirement</p>
+              <p>Clicking on the buttons below will take you to the respective websites where you can request-donate Covid Plasma</p>
+            </div>
+
+            <div class="panIndiaheading">
+               <h2> This is a compiled list of  the websites and references to Covid plasma sources pan India</h2>
+            </div>
+
+            <div class="eachSite">
+              <p class="site_n">Dhoondh</p>
+              <a href="https://dhoondh.com/"><button class="button">Doondh</button></a>
+              <p class="tagline"> Portal for matching donars and patients </p>
+          </div>
+
+          <div class="eachSite">
+            <p class="site_n">PINT</p>
+              <a href="https://pintnetwork.com/home"><button class="button">PINT</button></a>
+              <p class="tagline">Plasma In Need for Transfusion  </p>
+          </div>
+
+          <div class="eachSite">
+            <p class="site_n">Needplasma</p>
+              <a href="https://needplasma.in/"><button class="button">Needplasma</button></a>
+              <p class="tagline">Save lives with plasma</p>
+              <!-- <P>Send Message at Whatsapp <b>+919311442588</b></P> -->
+              <P>Send Msg at Whatsapp -click below to drop a message</P>
+              <a href=" https://wa.me/919311442588"><button>93114 42588</button></a>
+                           
+          </div>
+
+
+          <div class="eachSite">
+            <p class="site_n">GiveRed</p>
+              <a href="http://givered.in/"><button class="button">GiveRed</button></a>
+              <p class="tagline">Connects volunteer plasma donors to patients in real-time</p>
+                     
+          </div>
+
+         
+
+          <div class="eachSite">
+            <p class="site_n">PlasmaLine</p>
+              <a href=" https://plasmaline.in/"><button class="button"> PlasmaLine</button></a>
+              <p class="tagline"> Matching eligible plasma donors with patients </p>
+          </div>
+
+          <div class="eachSite">
+            <p class="site_n">PlasmaDonor</p>
+              <a href="https://plasmadonor.in/ "><button class="button">PlasmaDonor </button></a>
+             
+              <p>FB group</p>
+              <a href="https://www.facebook.com/groups/726416648205333"><button class=each_detail>PlasmaDonor (Fb page)</button></a>
+              <p class="tagline">HELP OTHERS BY DONATING PLASMA</p>
+          </div>
+          <div class="eachSite">
+            <p class="site_n">NeedCovidPlasma</p>
+              <a href=" http://needcovidplasma.in/"><button class="button">NeedCovidPlasma </button></a>
+              <p class="tagline"> Platform intended to connect donors,recipients and volunteers </p>
+          </div>
+
+          <div class="eachSite">
+            <p class="site_n">Plasmayoddha</p>
+              <a href="https://plasmayoddha.in/ "><button class="button"> Plasmayoddha</button></a>
+              <p class="tagline"></p>
+          </div>
+          <h3>Apps for connecting donors and recipients </h3>
+
+          <div class="eachSite">
+              <a href="https://jivin.in/ "><button class="button">Jivin </button></a>
+              <p class="tagline"> App connects current COVID patients with recovered COVID patients who wish to donate plasma.</p>
+          </div>
+
+           <div class="eachSite">
+              <a href=" https://citydonor.com/"><button class="button"> CityDonar</button></a>
+              <p class="tagline">Connecting Donors & Recipients.</p>
+          </div>
+
+           <div class="eachSite">
+              <a href=" https://www.simplyblood.com/"><button class="button">SIMPLYBLOOD </button></a>
+              <p class="tagline">Find Blood/Plasma Donor </p>
+          </div>
+
+          <h3>Social-media based donor-recipient groups</h3>
+
+          <div class="eachSite">
+              <a href="https://www.facebook.com/groups/556579325240584 "><button class="button">FB(Help Group) </button></a>
+              <p class="tagline">COVID19 PLASMA DONOR - RECIPIENT HELP INDIA GROUP</p>
+          </div>
+
+
+          <div class="eachSite">
+              <a href="https://www.facebook.com/groups/241569353638507/ "><button class="button">FB(Plasma donation help group) </button></a>
+              <p class="tagline"> COVID-19 Plasma Donation Help Group </p>
+          </div>
+          <h3>Twitter:Tweet plasma requirements to these accounts </h3>
+          <p>Post a tweet with mentioning the given below twitter accounts with clear details of your plasma reqirement </p>
+          <div class="eachSite">
+            <a href=" https://twitter.com/intent/tweet?text=%40BloodDonorsIn"><button class="button">@BloodDonarsIn </button></a><a href="https://twitter.com/intent/tweet?text=%40TeamSOSIndia"><button>@TeamSOSIndia</button></a><a href="https://twitter.com/intent/tweet?text=%40theniteshsingh"><button>@theniteshsingh</button></a><a href="https://twitter.com/intent/tweet?text=%40CovidPlasmaIn"><button>@CovidPlasmaIn</button></a>
+            <a href="https://twitter.com/intent/tweet?text=%40KABWelfare"><button>@KABWelfare</button></a><a href="https://twitter.com/intent/tweet?text=%40needcovidplasma"><button>@needcovidplasma</button></a>
+            <p class="tagline"></p>
+         </div>
+
+          <h3>NDTV plasma donation initiative</h3>
+           <div class="eachSite">
+
+              <!-- <p class="tagline">Send Whatsapp message at  <b>+91 9910668811</b></p>
+              <p>Email at <b>feedback@ndtv.com</b></p>-->            
+              <a href=" https://wa.me/919910668811 "><button class="button">+91-9910668811</button></a>
+              <p class="tagline">Click to send Whatsapp message </p>
+              <p>Email</p>
+              <a href="mailto:feedback@ndtv.com"><button class="button">email</button></a>
+              <p>Reach out to NDTV with plasma requirement and prescription</p>
+          </div>
+          <div class="eachSite">
+            <p class="site_n">friends2support</p>
+            <a href="http://friends2support.org/"><button class="button">friends2support</button></a>
+            <p class="tagline">Phone numbers of donors are available here. Select yes for covid plasma on the website  </p>
+            <a href="https://twitter.com/friends2support"><button class="button">@friends2support</button></a>
+            <p >Twitter </p>
+        </div>
+
+
+      </div>
+        
+
+        <div class="Regional partMainClass" id="regionalId"> 
+            <p class="regional_invisible_fonts">Regional</p>
+            <div class="Regionalheading">
+               <h2> This is a compiled list of all the websites and references to Regional wise Covid plasma sources </h2>
+            </div>
+            <h3>Andhra Pradesh</h3>
+           
+                  <div class="eachSite">
+                    <p class="site_n">PlasmaAP</p>
+                <a href="https://plasmaap.com/"><button class="button">PlasmaAP</button></a>
+                <p class="tagline"> Official plasma portal by Government of Andhrapradesh </p>
+            </div>
+                  
+
+            <div class="eachSite">
+              <p class="site_n">NeedCovidPlasma</p>
+                <a href=" http://needcovidplasma.in/"><button class="button">NeedCovidPlasma </button></a>
+                <p class="tagline"> Platform intended to connect donors,recipients and volunteers </p>
+             </div>
+
+            <div class="eachSite">
+              <p>Form to Donate plasma </p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq6EndClWOBslROlSkGq0pOSV9_nncygLqPwQ7lyVuGH485A/viewform"><button class="button">Donateplasma</button></a>
+              <p class="tagline">Vizag (Andhra Pradeep)</p>
+          </div>
+          <div class="eachSite">
+            <a href="https://www.instagram.com/team_jatayuofficial/"><button class="button">Team_jatayuofficial
+            </button></a>
+            <p class="tagline"> Instagram account to donate plasma for Telugu states</p>
+        </div>
+
+
+
+             <h3>Telangana</h3>
+             <div class="eachSite">
+               <p class="site_n">PlasmaForYou</p>
+                <a href="https://www.plasmaforyou.org/"><button class="button">PlasmaForYou</button></a>
+                <p class="tagline"> Ensuring equitable access to Plasma</p>
+            </div>
+
+             <div class="eachSite">
+              <p class="site_n">Telanganaplasmadonors</p>
+                <a href=" https://telanganaplasmadonors.com/" ><button class="button">Telangana<br>PlasmaDonors</button></a>
+                <p class="tagline"> Donate plasma & help patients in fighting COVID-19 </p>
+            </div>
+
+             <div class="eachSite">
+              <p class="site_n">GiftALife</p>
+                <a href="http://giftingalife.com/" ><button class="button">GiftALIfe</button></a>
+               
+                <p>Contact:</p>
+                <!-- <p><b>+91 8886222266 <br>+91 7997864542</b></p> -->
+               
+                <a href="tel: +91-8886222266 "><button class ="button"> +91-8886222266 </button></a><a href="tel:+91-7997864542"><button class ="button"> +91-7997864542</button></a>                 
+                 <p class="tagline">Bridge between plasma donors & needy patients in Telangana  </p>
+
+            </div>
+
+             <div class="eachSite">
+              <p class="site_n">Donateplasma.hcsc</p>
+                <a href="http://donateplasma.hcsc.in/ "><button class="button">donateplasma.hcsc.in</button></a>                 
+                 <!-- <p class="tagline">Send Whatsapp message at  <b>+91 9490616780</b></p> -->
+                 <p class="tagline">Contact:</b></p>
+                 <a href=" tel:+91-9490616780"><button class="button">+91-9490616780 </button></a>
+                <p class="tagline"> Plasma donation campaign for COVID-19 patients | Hyderabad  </p>
+            </div>
+
+            <div class="eachSite">
+              <p class="tagline"><strong>OnlineBloodDonors</strong></p>
+              <p >To register as a donor click below</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPq5xo9jv6MhxrhnEusYggi7XeBtmdKvQemeMuzo7HWsuFiw/viewform"><button class="button">Donor Registration</button></a>
+              <p>Twitter account</p>
+              <a href="https://twitter.com/OnlineBlooDonor"><button class="button">OnlineBloodDonors</button></a>
+          </div>
+          <div class="eachSite">
+            <p class="tagline">Helpline numbers for telangana- COVID, free ambulances etc  are available on clicking below: </p>
+            <a href="https://tscovid.com/"><button class="button">tscovid</button></a>
+            
+        </div>
+        <div class="eachSite">
+          <a href="https://www.instagram.com/team_jatayuofficial/"><button class="button">Team_jatayuofficial
+          </button></a>
+          <p class="tagline"> Instagram account to donate plasma for Telugu states</p>
+      </div>
+          <h3>Bangalore</h3>
+          <div class="eachSite">
+            
+            <a href="https://covidhelplinebangalore.com/plasma-donation-centers/"><button class="button">Helpline</button></a>
+            <p class="tagline">COVID Helpline Bangalore </p>
+            
+        </div>
+        <h3>Thanjavur District(Tamilnadu)</h3>
+        <div class="eachSite">
+          <p class="site_n"></p>
+          <a href="https://thanjavur.nic.in/"><button class="button">Thanjavur</button></a>
+          <p class="tagline">Donate plasma</p>
+          
+      </div>
+
+        <h3>Odisha</h3>
+        <div class="eachSite">
+          <p class="site_n">Covid-19 Odisha state plasma portal</p>
+          <a href="https://covid19.odisha.gov.in/"><button class="button">Odisha plasma portal</button></a>
+          <p class="tagline">Donate your blood Your plasma can save lives </p>
+          
+      </div>
+
+
+
+              <h3>Maharashtra</h3>
+
+            <div class="eachSite">
+                <a href="https://puneplasma.in/"><button class="button">puneplasma</button></a>
+                <p class="tagline"> Online portal for plasma donation in Pune </p>
+            </div>
+
+            <h3>Jammu & Kashmir</h3>
+
+            <div class="eachSite">
+                <a href="https://plasmakashmir.com/"><button class="button">plasmakashmir</button></a>
+                <p class="tagline">Donate Plasma. Save Lives.</p>
+            </div>
+
+            <div class="eachSite">
+                <a href="https://www.covidjk.com/plasma"><button class="button">covidjk</button></a>
+                <!-- <p>Contact Number:<b>+91 9419011095</b></p>           -->
+                <p>Click to send Whatsapp message:</p>
+                <a href=" https://wa.me/919419011095"><button class="button">+91-9419011095</button></a>    
+                <p class="tagline"> Donate Plasma for critical COVID-19 patients and save precious lives </p>
+            </div>
+
+
+            <div class="eachSite">
+              <p class="tagline">Social-media based donor-recipient groups(Telegram) <b>plasmadonorskashmir</b> </p>                              
+            </div>
+
+            <h3>Delhi/NCR</h3>
+
+            <div class="eachSite">
+              <p>KAB Welfare Foundation</p>
+              <a href="https://workflow-au.signavio.com/public/start-form/5ef82fc63623895e0219860a"><button class="button">KAB Welfare Foundation</button></a>
+              <p class="tagline">Request Form</p>              
+              <!-- <p>Contact Number:<b>+91 8448884344</b></p>   -->
+              <p>Click below to send Whatsapp message:</p>
+              <a href= "https://wa.me/918448884344"><button class="button">8448884344</button> </a>
+          </div>
+
+          <div class="eachSite">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSemB-YcrCIdM_EiSTAGVdJETTdqSHW5TYcTYT5FDtmpBIoYLw/viewform?fbzx=5678738196611634822"><button class="button">Step one</button></a>
+              <p class="tagline"> Delhi Plasma Request Form </p>
+          </div>
+          
+           <div class="eachSite">
+            
+              <p>Greetings everyone!
+                If anyone of you come across plasma requirement for Patient in Delhi suffering from COVID-19, kindly message us with full details in the following manner along with requirement slip:</p>
+
+               <p>Urgent Plasma Requirement from Covid-19 recovered patient.</p> 
+               <p> Patient:</p>
+               <p> Blood group:</p>
+               <p> Hospital:</p>
+              <p>  Hospital id:</p>
+                <p>Attendant Name:</p>
+              <P> Contact Number:</p>
+               <p>#KABWelfareFoundation</p>
+
+             <p>Thanks</p>
+              <p>KAB Welfare Foundation</p>
+              <p><a href="tel:+91-9810063261"><button class="button">+91-9810063261</button></a></p>
+              <p><a href="https://www.facebook.com/kamlaarorablessings/" ><button class="button">Facebook</button></a></p>
+
+            
+          </div>
+          </div>
+                          
+
+
+        
+    
+      </div>
+    <!-- Contribute us -->
+    <div class="contributeform partMainClass" id="contributeUsDivId">
+        <!-- contact form  -->
+        
+
+        <section class="contributeForm_Section" id="contribute_form_id">
+            <div class="contributeForm_container">
+              <div class="contributeForm_wrapper">
+                <div class="contributeForm_contact-info">
+                  <h1 class="contributeForm_brand">Contribute us</h1>
+                  <p >Be a contributer and take part in our mission</p>  
+                 
+                </div>
+                <div class="contributeForm_contact">
+                  <form id="contributeForm_contactForm">
+                    <p class="full">
+                      <label>Name</label>
+                      <input type="text" name="name" id="nameContributeForm" required>
+                    </p>
+                 
+                    <p class="full">
+                      <label>Email Address</label>
+                      <input type="email" name="email" id="emailContributeForm" required>
+                    </p>
+                    <p class="full">
+                      <label>Phone Number</label>
+                      <input type="text" name="phone" id="phoneContributeForm" required>
+                    </p>
+                    <p class="full">
+                      <label>Message</label>
+                      <textarea name="message" rows="5" id="messageContributeForm" required></textarea>
+                    </p>
+                    <p class="full">
+                      <button class="contributeformButtonClass" type="submit">SUBMIT</button>
+                    </p>
+                  </form>
+                  <div class="contributeForm_alert">Your message has been sent</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </div>
+    <h2 style="color: white;">holaaa</h2>
+
+    <!-- mission -->
+    <div class="missionpart partMainClass" id="missionDivId">
+        <!-- contact form  -->
+        
+       
+        <div class="mission">
+          <h2 class="missionHeading">Our Policy</h2>
+          <div class="missionMatter">
+            <p>
+              We aspire to connect people who are in need or can donate covid-19 plasma. 
+              we just act as a bridge to help the people selflessly.Contribute us by giving your valuable suggestions or any other websites ,references details related to covid-19 plasma in our contribute form.
+            </p>
+          </div>
+            <h2 class="missionHeading">Our Mission</h2>
+            
+            <div class="missionMatter">
+              
+                <p>
+                  "PlasmaAid" is just an app that aims to act as a convienient platform to connect the recipients and donors of Covid plasma. We facilitate your search by providing information regarding all the websites and plasma donor forms information at one place. 
+We are not into any medical services such as testing,plasma transfusion or etc.
+We neither engage ourselves into any monetary benifits nor do we promote any monetary transaction among the volunteers, donors and recipients.
+We just act as a bridge and are not liable to any discrepency in the information provided by the donors or the patients or the websites.
+                 
+                </p>
+                    
+                <h1 style="color: white;">holaaa</h1>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- contact forms -->
+    <div class="contactform partMainClass" id="contactUsDivId">
+        <!-- contact form  -->
+        
+        <section class="contactForm_Section" id="contact_form_id">
+            <div class="contactForm_container">
+              <div class="contactForm_wrapper">
+                <div class="contactForm_contact-info">
+                  <h1 class="contactForm_brand">Contact Us</h1>
+                  <p >For any queries,suggestion or feedback</p>  
+                 
+                </div>
+                <div class="contactForm_contact">
+                  <form id="contactForm_contactForm">
+                    <p class="full">
+                      <label>Name</label>
+                      <input type="text" name="name" id="nameContactForm" required>
+                    </p>
+                 
+                    <p class="full">
+                      <label>Email Address</label>
+                      <input type="email" name="email" id="emailContactForm" required>
+                    </p>
+                    <p class="full">
+                      <label>Phone Number</label>
+                      <input type="text" name="phone" id="phoneContactForm" required>
+                    </p>
+                    <p class="full">
+                      <label>Message</label>
+                      <textarea name="message" rows="5" id="messageContactForm" required></textarea>
+                    </p>
+                    <p class="full">
+                      <button class="contactformButtonClass" type="submit">SUBMIT</button>
+                    </p>
+                  </form>
+                  <div class="contactForm_alert">Your message has been sent</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    </div>
+
+  
+    
+
+    <div>        
+        <nav class="navbarbottom" id="navbarLower">
+            <div class="navbar-links-bottom">
+                <div class="flex-container">
+                    <li id="panIndia" onclick="panIndia_fun()"><a href="#homeDivId">India</a></li>
+                    <li id="regional" onclick="regional_fun()"><a href="#regionalId">Regional</a></li>
+                    <li id="contribute" onclick="contribute_fun()"><a href="#contributeUsDivId">Contribute</a></li>
+                    <li id="mission" onclick="mission_fun()"><a href="#missionDivId">Mission</a></li>
+                    <li id="contact" onclick="contact_fun()"><a href="#contactUsDivId">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        </div>
+        
+
+    <!-- JavaScript part linkings  -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="js/resp.js"></script> -->
+    <script src="js/navbarButton.js"></script>
+
+    <script>
+        // This part is for making the nav bar to be fixed
+        window.onload = function() {myFunction()};
+        
+        var headerLower = document.getElementById("navbarLower");
+        var stickyLower = headerLower.offsetTop;
+        var headerTop = document.getElementById("navbarTop");
+        var stickyTop = headerTop.offsetTop;
+        
+        function myFunction() {
+            headerLower.classList.add("stickyLower");
+            headerTop.classList.add("stickyTop");
+            panIndia_fun();
+        }
+
+    </script>        
+
+</body>
+</html>
